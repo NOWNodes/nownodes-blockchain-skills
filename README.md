@@ -9,7 +9,7 @@ It helps agents choose between JSON-RPC, REST, WebSocket, Blockbook, Trace/Debug
 From a public repository:
 
 ```bash
-npx skills add https://github.com/<org>/nownodes-blockchain-skills --skill nownodes-skill
+npx skills add https://github.com/NOWNodes/nownodes-blockchain-skills --skill nownodes-skill
 ```
 
 From a local checkout:
