@@ -1,0 +1,19 @@
+# NOWNodes Blockchain Skills
+
+Installable Codex skill package for NOWNodes Blockchain API integrations.
+
+Primary skill: `skills/nownodes-skill/SKILL.md`
+
+Use for:
+
+- JSON-RPC, REST, WebSocket, Blockbook, Trace/Debug, Archive, and MarketData examples.
+- Safe `NOWNODES_API_KEY` usage.
+- Endpoint selection and capability checks.
+- Troubleshooting `401`, `403`, `429`, and upstream errors.
+- Migrations from GetBlock, Alchemy, Infura, QuickNode, public RPC, or self-hosted nodes.
+
+Official docs:
+
+- https://docs.nownodes.io/
+- https://nownodes.io/faq
+- https://nownodes.io/home

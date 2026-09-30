@@ -1,0 +1,35 @@
+# NOWNodes Blockchain Skills Full Context
+
+This repository packages the `nownodes-skill` Codex skill for agents that build and troubleshoot NOWNodes Blockchain API integrations.
+
+## Install
+
+```bash
+npx skills add https://github.com/<org>/nownodes-blockchain-skills --skill nownodes-skill
+```
+
+## Skill Contract
+
+The agent should:
+
+- Read the relevant references from `skills/nownodes-skill/references/`.
+- Use `NOWNODES_API_KEY` from environment variables.
+- Default auth to `api-key` header and check chain-specific docs for exceptions.
+- Keep read-only calls separate from signing or broadcasting.
+- Avoid live API calls unless the user explicitly asks.
+- Handle `401`, `403`, `429`, and upstream errors clearly.
+- Verify endpoint capabilities against official NOWNodes docs when availability matters.
+
+## Reference Map
+
+- `overview.md`: API classes and when to use them.
+- `authentication.md`: API key handling and client setup.
+- `endpoint-selection.md`: chain/network/capability routing.
+- `request-patterns.md`: RPC, REST, WSS, Blockbook, retries, broadcast safety.
+- `errors-and-limits.md`: troubleshooting and rate limits.
+- `examples.md`: minimal copyable examples.
+- `framework-recipes.md`: ethers, viem, web3.js, Hardhat, Foundry, web3.py, fetch, requests, WebSocket clients.
+- `migrations.md`: provider migration guidance.
+- `security-playbook.md`: key storage, rotation, leak response, signing boundaries.
+- `capability-matrix.md`: curated quick routing layer.
+- `testing-and-evals.md`: manual evals and acceptance checks.
